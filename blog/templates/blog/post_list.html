@@ -1,11 +1,12 @@
 <div>
-    <h1><a href="/">Books</a></h1>
+    <h1><a href="/books">Каталог книг</a></h1>
 </div>
 
 {% for book in books %}
     <div>
-        <p>Name: {{ book.name }}</p>
-        <p>Author: {{ book.author }}</p>
-        <p>Sammari: {{ book.sammari|linebreaksbr }}</p>
+        <p>Название: {{ book.name }}</p>
+        <p>Автор: {{ book.author }}</p>
+        <p>Год издания: {{ book.published_date }}</p>
+        <p>Описание: {{ book.sammari|linebreaksbr }}</p>
     </div>
 {% endfor %}
