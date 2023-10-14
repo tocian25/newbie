@@ -1,0 +1,11 @@
+<div>
+    <h1><a href="/">Books</a></h1>
+</div>
+
+{% for book in books %}
+    <div>
+        <p>Name: {{ book.name }}</p>
+        <p>Author: {{ book.author }}</p>
+        <p>Sammari: {{ book.sammari|linebreaksbr }}</p>
+    </div>
+{% endfor %}
